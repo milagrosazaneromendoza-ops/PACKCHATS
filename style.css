@@ -1,0 +1,578 @@
+/*==================================
+WHATS PACK
+style.css
+===================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#0b0b0b;
+    color:#fff;
+    line-height:1.6;
+}
+
+/*========================
+HEADER
+=========================*/
+
+header{
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    background:#111;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    z-index:1000;
+    box-shadow:0 2px 15px rgba(0,0,0,.4);
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo i{
+    color:#25D366;
+    font-size:35px;
+}
+
+.logo h2{
+    font-size:30px;
+}
+
+.logo span{
+    color:#25D366;
+}
+
+nav{
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    transition:.3s;
+    font-weight:500;
+}
+
+nav a:hover{
+    color:#25D366;
+}
+
+.btn-header{
+    background:#25D366;
+    color:#fff;
+    padding:12px 22px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn-header:hover{
+    transform:translateY(-4px);
+}
+
+/*========================
+HERO
+=========================*/
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:120px 8% 60px;
+    gap:60px;
+}
+
+.hero-text{
+    flex:1;
+}
+
+.hero-text h1{
+    font-size:60px;
+    line-height:1.1;
+}
+
+.hero-text span{
+    color:#25D366;
+}
+
+.hero-text p{
+    margin:30px 0;
+    color:#d0d0d0;
+    font-size:18px;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:20px;
+}
+
+.btn{
+    background:#25D366;
+    color:#fff;
+    text-decoration:none;
+    padding:15px 35px;
+    border-radius:8px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-4px);
+}
+
+.btn2{
+    border:2px solid #25D366;
+    color:#25D366;
+    text-decoration:none;
+    padding:15px 35px;
+    border-radius:8px;
+    transition:.3s;
+}
+
+.btn2:hover{
+    background:#25D366;
+    color:#fff;
+}
+
+.hero-image{
+    flex:1;
+    text-align:center;
+}
+
+.hero-image img{
+    width:100%;
+    max-width:500px;
+}
+
+/*========================
+TÍTULOS
+=========================*/
+
+section{
+    padding:90px 8%;
+}
+
+section h2{
+    text-align:center;
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+section p{
+    text-align:center;
+    color:#d3d3d3;
+    margin-bottom:40px;
+}
+
+/*========================
+VIDEO
+=========================*/
+
+.video{
+    background:#111;
+}
+
+.video-container{
+    max-width:900px;
+    margin:auto;
+    overflow:hidden;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,.5);
+}
+
+.video-container iframe{
+    width:100%;
+    height:500px;
+    border:none;
+}
+
+/*========================
+BENEFICIOS
+=========================*/
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:#171717;
+    padding:35px;
+    border-radius:15px;
+    text-align:center;
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    border:1px solid #25D366;
+}
+
+.card i{
+    font-size:45px;
+    color:#25D366;
+    margin-bottom:20px;
+}
+
+.card h3{
+    margin-bottom:15px;
+}
+
+/*========================
+SERVICIOS
+=========================*/
+
+.servicios-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.servicio{
+    background:#171717;
+    padding:25px;
+    display:flex;
+    align-items:center;
+    gap:15px;
+    border-radius:12px;
+    transition:.3s;
+}
+
+.servicio:hover{
+    transform:translateX(8px);
+}
+
+.servicio i{
+  /*==================================
+PRECIOS
+==================================*/
+
+.pricing{
+    display:flex;
+    justify-content:center;
+    gap:35px;
+    flex-wrap:wrap;
+    margin-top:50px;
+}
+
+.plan{
+    width:330px;
+    background:#171717;
+    border-radius:15px;
+    padding:40px;
+    text-align:center;
+    transition:.4s;
+    position:relative;
+}
+
+.plan:hover{
+    transform:translateY(-10px);
+    box-shadow:0 10px 30px rgba(37,211,102,.3);
+}
+
+.plan.popular{
+    border:2px solid #25D366;
+}
+
+.plan.popular span{
+    position:absolute;
+    top:-15px;
+    left:50%;
+    transform:translateX(-50%);
+    background:#25D366;
+    color:#fff;
+    padding:8px 20px;
+    border-radius:30px;
+    font-size:14px;
+    font-weight:bold;
+}
+
+.plan h3{
+    font-size:28px;
+}
+
+.plan h1{
+    color:#25D366;
+    font-size:60px;
+    margin:20px 0;
+}
+
+.plan p{
+    margin-bottom:20px;
+}
+
+.plan ul{
+    list-style:none;
+    text-align:left;
+    margin-bottom:30px;
+}
+
+.plan ul li{
+    margin:12px 0;
+}
+
+/*==================================
+TESTIMONIOS
+==================================*/
+
+.testimonios{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.testimonio{
+    background:#171717;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    transition:.3s;
+}
+
+.testimonio:hover{
+    transform:translateY(-8px);
+}
+
+.testimonio strong{
+    color:#25D366;
+}
+
+/*==================================
+CONTACTO
+==================================*/
+
+form{
+    max-width:650px;
+    margin:auto;
+}
+
+form input{
+    width:100%;
+    padding:18px;
+    margin-bottom:20px;
+    background:#171717;
+    border:1px solid #333;
+    color:#fff;
+    border-radius:8px;
+    font-size:16px;
+}
+
+form input:focus{
+    outline:none;
+    border-color:#25D366;
+}
+
+form button{
+    width:100%;
+    padding:18px;
+    border:none;
+    border-radius:8px;
+    background:#25D366;
+    color:#fff;
+    font-size:18px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+form button:hover{
+    background:#1ebd59;
+}
+
+/*==================================
+FOOTER
+==================================*/
+
+footer{
+    background:#111;
+    padding:40px;
+    text-align:center;
+}
+
+.footer-logo h2{
+    font-size:35px;
+}
+
+.footer-logo span{
+    color:#25D366;
+}
+
+footer p{
+    color:#bbb;
+    margin-top:10px;
+}
+
+/*==================================
+REDES SOCIALES
+==================================*/
+
+.redes-sociales{
+    background:#0d0d0d;
+    text-align:center;
+    padding:60px 20px;
+}
+
+.redes-sociales h3{
+    font-size:32px;
+    margin-bottom:10px;
+}
+
+.redes-sociales p{
+    color:#cfcfcf;
+    margin-bottom:35px;
+}
+
+.social-icons{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.social-icons a{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    color:#fff;
+    font-size:32px;
+    transition:.4s;
+}
+
+.whatsapp-icon{
+    background:#25D366;
+}
+
+.facebook-icon{
+    background:#1877F2;
+}
+
+.tiktok-icon{
+    background:#000;
+    border:2px solid #fff;
+}
+
+.social-icons a:hover{
+    transform:translateY(-8px) scale(1.1);
+    box-shadow:0 10px 25px rgba(0,0,0,.4);
+}
+
+/*==================================
+BOTÓN FLOTANTE WHATSAPP
+==================================*/
+
+.whatsapp{
+    position:fixed;
+    bottom:25px;
+    right:25px;
+    width:65px;
+    height:65px;
+    border-radius:50%;
+    background:#25D366;
+    color:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:34px;
+    text-decoration:none;
+    box-shadow:0 10px 25px rgba(0,0,0,.4);
+    z-index:999;
+    transition:.3s;
+}
+
+.whatsapp:hover{
+    transform:scale(1.15);
+}
+
+/*==================================
+RESPONSIVE
+==================================*/
+
+@media(max-width:992px){
+
+header{
+    flex-direction:column;
+    gap:20px;
+}
+
+nav{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.hero{
+    flex-direction:column;
+    text-align:center;
+}
+
+.hero-text h1{
+    font-size:45px;
+}
+
+.hero-buttons{
+    justify-content:center;
+}
+
+.video-container iframe{
+    height:350px;
+}
+
+}
+
+@media(max-width:768px){
+
+.hero{
+    padding-top:180px;
+}
+
+.hero-text h1{
+    font-size:35px;
+}
+
+section h2{
+    font-size:30px;
+}
+
+.video-container iframe{
+    height:230px;
+}
+
+.plan{
+    width:100%;
+}
+
+.social-icons a{
+    width:60px;
+    height:60px;
+    font-size:28px;
+}
+
+.whatsapp{
+    width:58px;
+    height:58px;
+    font-size:30px;
+}
+
+
+    color:#25D366;
+    font-size:22px;
+}
